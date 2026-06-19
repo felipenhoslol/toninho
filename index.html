@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelaria do Toninho – Papelaria, Aviamentos, Presentes e Doces</title>
+    <meta name="description" content="Papelaria do Toninho em Caçapava, SP. Oferecemos materiais escolares, aviamentos, presentes personalizados e doces. Entre em contato por WhatsApp!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 0.75rem;">
+                <img src="assets/images/toninho.png" alt="Toninho Logo" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--color-primary-light);">
+                <span class="logo-text">Papelaria do <span class="logo-accent">Toninho</span></span>
+            </a>
+            
+            <nav class="site-nav" aria-label="Navegação Principal">
+                <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Abrir Menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="primary-menu" class="menu">
+                    <li><a href="#produtos">Produtos e Serviços</a></li>
+                    <li><a href="#como-funciona">Como Pedir</a></li>
+                    <li><a href="#faq">Dúvidas Frequentes</a></li>
+                    <li><a href="#contato">Contato e Endereço</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="assets/images/local_toninho (2).png" alt="Interior da Papelaria do Toninho" class="hero-bg-image">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <span class="hero-badge">Tradição & Variedade em Caçapava</span>
+                <h1>O que você precisa para criar, costurar, presentear e saborear.</h1>
+                <p class="hero-subtitle">Reunimos itens de papelaria, aviamentos para costura, presentes criativos e doces deliciosos em um só lugar. Atendimento humano, rápido e feito para você.</p>
+                <div class="hero-actions">
+                    <a href="#contato" class="btn btn-primary">
+                        Fazer Pedido
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#produtos" class="btn btn-outline">Ver Catálogo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust / Badges Section -->
+    <section class="trust" aria-label="Diferenciais de atendimento">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h3>Compra Prática</h3>
+                    <p>Faça seu pedido diretamente pelo WhatsApp.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                    <h3>Retirada na Loja</h3>
+                    <p>Faça seu pedido e retire diretamente em nossa loja física.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Atendimento Humano</h3>
+                    <p>Fale diretamente com quem entende e cuida do seu pedido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Products Section -->
+    <section class="products-section" id="produtos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">O que oferecemos</span>
+                <h2>Nossos Segmentos de Destaque</h2>
+                <p>Navegue pelas nossas quatro linhas de produtos selecionados com carinho para você.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Card 1: Papelaria (Grande) -->
+                <div class="bento-card card-large">
+                    <div class="bento-image">
+                        <img src="assets/images/papelaria.png" alt="Materiais de Papelaria">
+                    </div>
+                    <div class="bento-info">
+                        <span class="bento-tag">Escola & Escritório</span>
+                        <h3>Papelaria & Impressões</h3>
+                        <p>Variedade completa de cadernos de alta qualidade, lápis de cor, canetas especiais, blocos e acessórios. Realizamos impressões, cópias e etiquetas com acabamento excelente para seus trabalhos ou negócios.</p>
+                        <a href="#contato" class="bento-link">Fazer orçamento</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Aviamentos -->
+                <div class="bento-card">
+                    <div class="bento-image">
+                        <img src="assets/images/aviamentos.png" alt="Linhas e Agulhas">
+                    </div>
+                    <div class="bento-info">
+                        <span class="bento-tag">Costura & Artesanato</span>
+                        <h3>Aviamentos</h3>
+                        <p>Tudo para costura e artesanato: linhas de diversas cores, fitas decorativas, agulhas, botões e elásticos.</p>
+                        <a href="#contato" class="bento-link">Consultar cores</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Presentes -->
+                <div class="bento-card">
+                    <div class="bento-image">
+                        <img src="assets/images/presentes.png" alt="Canecas e Presentes">
+                    </div>
+                    <div class="bento-info">
+                        <span class="bento-tag">Criatividade</span>
+                        <h3>Presentes</h3>
+                        <p>Canecas personalizadas por sublimação, caixas de presentes exclusivas e mimos ideais para surpreender.</p>
+                        <a href="#contato" class="bento-link">Personalizar item</a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Doces -->
+                <div class="bento-card">
+                    <div class="bento-image">
+                        <img src="assets/images/doces.png" alt="Doces e Balas">
+                    </div>
+                    <div class="bento-info">
+                        <span class="bento-tag">Momentos Doces</span>
+                        <h3>Doces & Guloseimas</h3>
+                        <p>Deixe o dia mais gostoso com nossa seleção de balas, pirulitos, doces tradicionais e guloseimas para todas as idades.</p>
+                        <a href="#contato" class="bento-link">Ver opções</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Welcome Banner -->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="welcome-card">
+                <div class="welcome-avatar">
+                    <img src="assets/images/toninho.png" alt="Toninho, fundador da Papelaria do Toninho">
+                </div>
+                <div class="welcome-content">
+                    <span class="section-tag">Fundador</span>
+                    <h2>Atendimento por quem realmente se importa</h2>
+                    <blockquote class="welcome-quote">
+                        <p>"Desde 2006, nosso compromisso é oferecer produtos excelentes com um atendimento amigável e atencioso. Aqui você não fala com robôs – fale direto conosco pelo WhatsApp para montarmos seu pedido de acordo com o que você precisa."</p>
+                        <cite>— Toninho & Equipe</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="como-funciona">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Passo a passo</span>
+                <h2>Como Funciona o seu Pedido</h2>
+                <p>Comprar conosco é simples, rápido e totalmente focado na sua comodidade.</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-step">
+                    <span class="step-num">01</span>
+                    <h3>Escolha no Site ou Fale Conosco</h3>
+                    <p>Navegue pelos segmentos do site e pense no que precisa, ou traga sua lista de compras de escola, costura ou festa.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">02</span>
+                    <h3>Envie por WhatsApp</h3>
+                    <p>Mande uma mensagem contendo os itens ou artes personalizadas que deseja. Nossa equipe responde rapidamente com o orçamento.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">03</span>
+                    <h3>Aprove e Retire na Loja</h3>
+                    <p>Após aprovação do orçamento e da arte (para personalizados), preparamos os produtos com carinho e avisamos para você retirar na loja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Interactive Accordions) -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Dúvidas</span>
+                <h2>Perguntas Frequentes</h2>
+                <p>Clique nas perguntas abaixo para ver as respostas detalhadas com suporte a atendimento.</p>
+            </div>
+
+            <div class="faq-list">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>Qual o prazo de produção de itens personalizados?</span>
+                        <span class="faq-icon-wrapper">
+                            <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            <p>Para itens padrão (como material escolar simples, doces e aviamentos em estoque), a separação é imediata. Produtos personalizados, como canecas e etiquetas sob encomenda, possuem prazo médio de produção de 2 a 4 dias úteis após a aprovação da arte final.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>Como posso realizar o pagamento do meu pedido?</span>
+                        <span class="faq-icon-wrapper">
+                            <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            <p>Aceitamos pagamentos via PIX (chave enviada no fechamento do orçamento), cartões de crédito e débito na entrega, ou dinheiro. Para pedidos de personalizados de maior volume, combinamos um sinal de 50% e o restante no recebimento.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>Vocês realizam entregas ou apenas retirada?</span>
+                        <span class="faq-icon-wrapper">
+                            <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            <p>Trabalhamos exclusivamente com a modalidade de <strong>retirada em nossa loja física</strong> em Caçapava, SP. Não realizamos entregas ao domicílio. Assim que seu pedido estiver pronto, avisamos você pelo WhatsApp para vir retirá-lo!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>Posso enviar minha própria arte para canecas e etiquetas?</span>
+                        <span class="faq-icon-wrapper">
+                            <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            <p>Com certeza. Você pode enviar logotipos, fotos ou frases por WhatsApp. Nossa equipe avalia a qualidade da imagem e monta um modelo digital para você aprovar antes de iniciarmos a produção física.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Store Gallery Section -->
+    <section class="store-gallery-section" id="conheca-a-loja">
+        <div class="container">
+            <div class="store-gallery-grid">
+                <div class="store-gallery-info">
+                    <span class="section-tag">Nossa Loja</span>
+                    <h2>Conheça o Nosso Espaço</h2>
+                    <p>Há mais de 15 anos de portas abertas em Caçapava, SP. Preparamos um ambiente acolhedor com tudo o que você precisa em papelaria, presentes, aviamentos e doces. Dê uma olhada no nosso espaço físico e venha retirar os seus pedidos diretamente com a gente!</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="#contato" class="btn btn-primary">Ver Localização</a>
+                    </div>
+                </div>
+                
+                <div class="store-masonry">
+                    <div class="masonry-col">
+                        <div class="masonry-item">
+                            <img src="assets/images/local_toninho (1).png" alt="Fachada da Papelaria do Toninho">
+                        </div>
+                        <div class="masonry-item">
+                            <img src="assets/images/local_toninho (4).png" alt="Interior da Papelaria do Toninho - Prateleiras de cadernos e materiais">
+                        </div>
+                    </div>
+                    <div class="masonry-col col-offset">
+                        <div class="masonry-item">
+                            <img src="assets/images/local_toninho (2).png" alt="Interior da Papelaria do Toninho - Seção de materiais escolares">
+                        </div>
+                        <div class="masonry-item">
+                            <img src="assets/images/local_toninho (5).png" alt="Interior da Papelaria do Toninho - Seção de fitas e aviamentos">
+                        </div>
+                    </div>
+                    <div class="masonry-col">
+                        <div class="masonry-item item-single" style="height: 100%;">
+                            <img src="assets/images/local_toninho (3).png" alt="Interior da Papelaria do Toninho - Balcão de atendimento e doces" style="height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="contact-section" id="contato">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Info Panel -->
+                <div class="contact-info">
+                    <span class="section-tag">Fale Conosco</span>
+                    <h2>Canais de Contato</h2>
+                    <p class="contact-desc">Para fazer um pedido, tirar dúvidas ou pedir orçamentos de personalizados, <strong>envie uma mensagem no WhatsApp</strong>. Atendemos de forma totalmente personalizada. Lembrando que todos os pedidos devem ser retirados em nossa loja física!</p>
+                    
+                    <div class="contact-methods">
+                        <!-- WhatsApp Card -->
+                        <a href="https://wa.me/551232242826" target="_blank" rel="noopener" class="contact-card whatsapp-card">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-whatsapp"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Conversar no WhatsApp / Fixo</span>
+                                <span class="method-value">(12) 3224-2826</span>
+                                <span class="method-hint">Clique para abrir o chat ou ligar</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="extra-contacts">
+                        <div class="social-contact-wrapper" style="margin-top: 0.5rem;">
+                            <span class="method-label" style="display:block; margin-bottom: 0.5rem;">Siga-nos nas Redes Sociais</span>
+                            <div style="display:flex; gap: 1rem;">
+                                <a href="https://www.instagram.com/papelariadotoninho/" target="_blank" rel="noopener" class="social-contact-btn" style="display:inline-flex; align-items:center; gap:0.5rem; font-size:0.9rem; font-weight:600;">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: #e1306c;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                    Instagram
+                                </a>
+                                <a href="https://www.facebook.com/papelariatoninho/" target="_blank" rel="noopener" class="social-contact-btn" style="display:inline-flex; align-items:center; gap:0.5rem; font-size:0.9rem; font-weight:600;">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: #1877f2;"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                    Facebook
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map / Location Panel -->
+                <div class="contact-map">
+                    <div class="map-wrapper">
+                        <!-- Embedded Google Map -->
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Rua%20Doutor%20Ant%C3%B4nio%20Sylvio%20Cunha%20Bueno%2C%2041%2C%20Ca%C3%A7apava%2C%20SP%2C%20Brasil&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização da Papelaria do Toninho no Google Maps">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo-wrapper" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+                    <img src="assets/images/toninho.png" alt="Avatar Toninho" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2.5px solid rgba(255, 255, 255, 0.15);">
+                    <a href="#" class="logo" style="margin-bottom: 0;">
+                        <span class="logo-text" style="color: var(--color-bg-base);">Papelaria do <span class="logo-accent" style="color: var(--color-primary-light);">Toninho</span></span>
+                    </a>
+                </div>
+                <p class="brand-desc">Sua loja local de confiança para material escolar, aviamentos, presentes personalizados e doces. Atendendo com carinho em Caçapava, SP. Fundada em 28/09/2006.</p>
+                <div class="footer-contacts" style="margin-bottom: 1.5rem;">
+                    <p><strong>WhatsApp & Fixo:</strong> (12) 3224-2826</p>
+                    <p><strong>E-mail:</strong> papelariadotoninho@gmail.com</p>
+                </div>
+                <div class="footer-social" style="display: flex; gap: 1rem;">
+                    <a href="https://www.instagram.com/papelariadotoninho/" target="_blank" rel="noopener" aria-label="Instagram" style="color: #94a3b8; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://www.facebook.com/papelariatoninho/" target="_blank" rel="noopener" aria-label="Facebook" style="color: #94a3b8; transition: color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <nav class="footer-nav">
+                    <a href="#produtos">Produtos e Serviços</a>
+                    <a href="#como-funciona">Como Pedir</a>
+                    <a href="#faq">Dúvidas Frequentes</a>
+                    <a href="#contato">Contato e Mapa</a>
+                </nav>
+            </div>
+            
+            <div class="footer-location">
+                <h4>Onde Estamos</h4>
+                <p>Rua Doutor Antônio Sylvio Cunha Bueno, 41</p>
+                <p>Caçapava - SP, CEP: 12287-380</p>
+                <a href="https://maps.google.com/maps?q=Rua%20Doutor%20Ant%C3%B4nio%20Sylvio%20Cunha%20Bueno%2C%2041%2C%20Ca%C3%A7apava%2C%20SP" target="_blank" rel="noopener" class="maps-btn">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    Ver no Google Maps
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; <span id="year"></span> Papelaria do Toninho. Todos os direitos reservados. | CNPJ: 08.588.967/0001-48 | Fundada em 28/09/2006</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Responsive Hamburger Navigation Menu
+        const navToggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.menu');
+        
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.setAttribute('aria-expanded', 'false');
+                menu.classList.remove('menu-open');
+            });
+        });
+
+        // Interactive Accordion FAQ with smooth max-height animation
+        const faqTriggers = document.querySelectorAll('.faq-trigger');
+        
+        faqTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const item = trigger.parentElement;
+                const content = trigger.nextElementSibling;
+                const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+                
+                // Close other items if we want accordion behavior (optional, let's do it for clean feeling)
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        const otherTrigger = otherItem.querySelector('.faq-trigger');
+                        const otherContent = otherItem.querySelector('.faq-content');
+                        otherTrigger.setAttribute('aria-expanded', 'false');
+                        otherContent.style.maxHeight = null;
+                        otherItem.classList.remove('faq-item-open');
+                    }
+                });
+
+                // Toggle active state
+                if (isExpanded) {
+                    trigger.setAttribute('aria-expanded', 'false');
+                    content.style.maxHeight = null;
+                    item.classList.remove('faq-item-open');
+                } else {
+                    trigger.setAttribute('aria-expanded', 'true');
+                    // Set max-height dynamically to the scrollHeight of content
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    item.classList.add('faq-item-open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
