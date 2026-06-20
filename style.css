@@ -2,26 +2,30 @@
    DESIGN SYSTEM & VARIABLES
    ---------------------------------------------------- */
 :root {
-    /* Cores Premium e Minimalistas */
-    --color-primary: #1d4ed8;       /* Azul Cobalto moderno */
-    --color-primary-hover: #1e40af; /* Azul Cobalto escuro */
-    --color-primary-light: #eff6ff; /* Azul sutil para fundo */
-    --color-primary-subtle: rgba(29, 78, 216, 0.05);
+    /* Cores Premium e Minimalistas (Dalu Papelaria) */
+    --color-primary: #5C7C9E;       /* Azul Slate/Dusty (fundo do logo) */
+    --color-primary-hover: #455E78; /* Azul Slate escuro */
+    --color-primary-light: #EFF4F9; /* Azul sutil para fundo */
+    --color-primary-subtle: rgba(92, 124, 158, 0.05);
+    
+    --color-accent: #E8B8AC;        /* Rose Gold / Blush (elementos do logo) */
+    --color-accent-hover: #D4A397;  /* Rose Gold escuro */
+    --color-accent-light: #FDF7F5;  /* Rosé sutil para fundo */
     
     --color-success: #16a34a;       /* Verde WhatsApp refinado */
     --color-success-hover: #15803d;
     --color-success-light: #f0fdf4;
     
     /* Escala Cinza/Neutros */
-    --color-text-dark: #0f172a;     /* Slate-900 (mais moderno que preto puro) */
-    --color-text-muted: #475569;    /* Slate-600 */
-    --color-bg-base: #ffffff;       /* Branco puro */
-    --color-bg-alt: #f8fafc;        /* Slate-50 (fundo leve e limpo) */
-    --color-bg-blue-weak: #f0f7ff;  /* Azul gelo sutil e sofisticado (Sky-50) */
+    --color-text-dark: #222E3C;     /* Azul-cinza muito escuro e elegante */
+    --color-text-muted: #536477;    /* Azul-cinza médio */
+    --color-bg-base: #FFFFFF;       /* Branco puro */
+    --color-bg-alt: #F6F8FA;        /* Cinza-azul sutil */
+    --color-bg-blue-weak: #EFF2F6;  /* Azul-cinza sutil e sofisticado */
     
     /* Bordas e Linhas */
-    --color-border: #e2e8f0;        /* Slate-200 */
-    --color-border-subtle: #f1f5f9; /* Slate-100 */
+    --color-border: #E2E8F0;        /* Slate-200 */
+    --color-border-subtle: #F1F5F9; /* Slate-100 */
     
     /* Tipografia */
     --font-primary: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
@@ -122,13 +126,13 @@ section {
 .btn-primary {
     background-color: var(--color-primary);
     color: var(--color-bg-base);
-    box-shadow: 0 4px 14px rgba(29, 78, 216, 0.15);
+    box-shadow: 0 4px 14px rgba(92, 124, 158, 0.15);
 }
 
 .btn-primary:hover {
     background-color: var(--color-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(29, 78, 216, 0.25);
+    box-shadow: 0 6px 20px rgba(92, 124, 158, 0.25);
 }
 
 .btn-primary:active {
@@ -186,7 +190,7 @@ section {
 }
 
 .logo-accent {
-    color: var(--color-primary);
+    color: var(--color-accent);
 }
 
 /* Menu de Navegação */
@@ -339,7 +343,7 @@ section {
     margin-bottom: 1.5rem;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    border: 1px solid rgba(29, 78, 216, 0.08);
+    border: 1px solid rgba(92, 124, 158, 0.08);
 }
 
 .hero h1 {
@@ -455,7 +459,7 @@ section {
    ---------------------------------------------------- */
 .products-section {
     background-color: var(--color-bg-blue-weak);
-    border-bottom: 1px solid rgba(29, 78, 216, 0.04);
+    border-bottom: 1px solid rgba(92, 124, 158, 0.04);
 }
 
 .bento-grid {
@@ -468,7 +472,7 @@ section {
     background-color: var(--color-bg-base); /* Cards brancos no fundo azul gelo para contraste impecável */
     border-radius: var(--radius-lg);
     overflow: hidden;
-    border: 1px solid rgba(29, 78, 216, 0.04);
+    border: 1px solid rgba(92, 124, 158, 0.04);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
@@ -560,8 +564,8 @@ section {
 /* Hover no Bento Card - Premium Glow */
 .bento-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 36px -12px rgba(29, 78, 216, 0.14);
-    border-color: rgba(29, 78, 216, 0.18);
+    box-shadow: 0 16px 36px -12px rgba(92, 124, 158, 0.14);
+    border-color: rgba(92, 124, 158, 0.18);
     background-color: var(--color-bg-base);
 }
 
@@ -596,8 +600,8 @@ section {
 
 .process-step:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 28px -10px rgba(29, 78, 216, 0.1);
-    border-color: rgba(29, 78, 216, 0.15);
+    box-shadow: 0 12px 28px -10px rgba(92, 124, 158, 0.1);
+    border-color: rgba(92, 124, 158, 0.15);
 }
 
 .step-num {
@@ -646,7 +650,7 @@ section {
     height: 160px;
     border-radius: var(--radius-full);
     overflow: hidden;
-    border: 4px solid var(--color-primary-light);
+    border: 4px solid var(--color-accent);
     box-shadow: var(--shadow-sm);
     flex-shrink: 0;
 }
@@ -710,8 +714,8 @@ section {
 }
 
 .faq-item:hover {
-    border-color: rgba(29, 78, 216, 0.15);
-    box-shadow: 0 10px 24px -10px rgba(29, 78, 216, 0.08);
+    border-color: rgba(92, 124, 158, 0.15);
+    box-shadow: 0 10px 24px -10px rgba(92, 124, 158, 0.08);
     transform: translateY(-2px);
 }
 
@@ -756,7 +760,7 @@ section {
 .faq-item-open {
     background-color: var(--color-bg-base);
     border-color: var(--color-primary-light);
-    box-shadow: 0 12px 28px -10px rgba(29, 78, 216, 0.1);
+    box-shadow: 0 12px 28px -10px rgba(92, 124, 158, 0.1);
 }
 
 .faq-item-open .faq-icon-wrapper {
@@ -788,8 +792,8 @@ section {
    ---------------------------------------------------- */
 .store-gallery-section {
     background-color: var(--color-bg-blue-weak);
-    border-top: 1px solid rgba(29, 78, 216, 0.05);
-    border-bottom: 1px solid rgba(29, 78, 216, 0.05);
+    border-top: 1px solid rgba(92, 124, 158, 0.05);
+    border-bottom: 1px solid rgba(92, 124, 158, 0.05);
     padding: 6rem 0;
 }
 
@@ -962,9 +966,9 @@ section {
 }
 
 .email-card:hover {
-    border-color: rgba(29, 78, 216, 0.3);
+    border-color: rgba(92, 124, 158, 0.3);
     transform: translateY(-4px);
-    box-shadow: 0 14px 30px -10px rgba(29, 78, 216, 0.15);
+    box-shadow: 0 14px 30px -10px rgba(92, 124, 158, 0.15);
 }
 
 .email-card:hover .method-icon {
@@ -1356,7 +1360,7 @@ button:focus-visible {
 }
 
 .business-hours:hover {
-    border-color: rgba(29, 78, 216, 0.1);
+    border-color: rgba(92, 124, 158, 0.1);
     box-shadow: var(--shadow-sm);
     transform: translateY(-2px);
 }
